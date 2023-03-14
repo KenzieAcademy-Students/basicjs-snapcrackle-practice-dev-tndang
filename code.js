@@ -2,6 +2,7 @@
 // and select "Open with Live Server"
 
 // Your Code Here.
+let highestNumber = prompt("What is the highest number?");
 
 let snapCrackle = function(maxValue) {
     let message = "";
@@ -25,7 +26,10 @@ let snapCrackle = function(maxValue) {
 let render = function(text, maxValue) {
     document.write("<h1>Snap Crackle!</h1>");
     document.write(`<h3>Max Value: ${maxValue}</h3>`);
-    document.write(`<p>${text}<p>`)
+    document.write(`<p>${text}<p>`);
 }
 
-render(snapCrackle(12), 12)
+let result = snapCrackle(highestNumber);
+
+console.log(snapCrackle(highestNumber));
+render(result, highestNumber);
