@@ -31,5 +31,5 @@ let render = function(text, maxValue) {
 
 let result = snapCrackle(highestNumber);
 
-console.log(snapCrackle(highestNumber));
+console.log(result);
 render(result, highestNumber);
