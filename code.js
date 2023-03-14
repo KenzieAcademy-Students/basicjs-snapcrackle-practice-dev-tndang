@@ -22,4 +22,10 @@ let snapCrackle = function(maxValue) {
     return message;
 }
 
-console.log(snapCrackle(12));
+let render = function(text, maxValue) {
+    document.write("<h1>Snap Crackle!</h1>");
+    document.write(`<h3>Max Value: ${maxValue}</h3>`);
+    document.write(`<p>${text}<p>`)
+}
+
+render(snapCrackle(12), 12)
