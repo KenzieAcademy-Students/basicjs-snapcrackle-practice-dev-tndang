@@ -17,7 +17,7 @@ let snapCrackle = function(maxValue) {
         else if (index % 5 === 0) {
             message += "Crackle, ";
         } else {
-            message += (index + ", ");
+            message += `${index}, `;
         }
     }
     return message;
