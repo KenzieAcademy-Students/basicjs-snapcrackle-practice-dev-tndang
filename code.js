@@ -2,25 +2,21 @@
 // and select "Open with Live Server"
 
 // Your Code Here.
-let snapCrackle = function (maxValue) {
-    let message;
-    let number = 1;
-    while (number <= maxValue) {
+function snapCrackle(maxValue) {
+    for (number = 1; number <= maxValue; number++) {
         if (number % 2 !== 0) {
             if (number % 5 === 0) {
-                message = "SnapCrackle, ";
+                document.write("SnapCrackle, ");
             } else {
-            message = "Snap, ";
+            document.write("Snap, ");
             }
         }
         else if (number % 5 === 0) {
-            message = "Crackle, ";
+            document.write("Crackle, ");
         } else {
-            message = number + ", ";
+            document.write(number + ", ");
         }
-        number++;
     }
-    return message;
 }
 
-console.log(snapCrackle(12));
+snapCrackle(15);
